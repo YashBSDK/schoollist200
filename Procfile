@@ -1,1 +1,1 @@
-web:node api.js
+web:nodemon api.js
