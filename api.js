@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+const port = process.env.PORT || 3030;
 
 const school = [
 
@@ -91,10 +91,6 @@ const school = [
 app.get('', (req, res) => {
     res.send(school);
 });
-
-
-
-const port = process.env.port || 3030;
 
 app.listen(port, () =>{
     console.log(`listening on port ${port}`)
