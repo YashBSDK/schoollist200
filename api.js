@@ -1060,7 +1060,7 @@ const school = [
 
 
 
-app.get('/api/schools', (req, res) => {
+app.get('/schoolslist/school', (req, res) => {
     res.send(school);
 });
 
