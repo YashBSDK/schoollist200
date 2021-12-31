@@ -1058,8 +1058,6 @@ const school = [
 {school_name:"SOSE, Plot No. 1, Link Road, Karol Bagh",school_id:2128140	}
 ];
 
-var cors = new EnableCorsAttribute("https://schoolslist.herokuapp.com/schoolslist/school", "*", "*");
-config.EnableCors(cors);
 
 app.get('/schoolslist/school', (req, res) => {
     res.send(school);
