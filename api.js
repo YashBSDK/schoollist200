@@ -1058,7 +1058,7 @@ const school = [
 {school_name:"SOSE, Plot No. 1, Link Road, Karol Bagh",school_id:2128140	}
 ];
 
-
+app.use(cors());
 
 app.get('/schoolslist/school', (req, res) => {
     res.send(school);
